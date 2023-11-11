@@ -74,18 +74,23 @@ getTotal.addEventListener("click", () => {
 let numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13];
 /* Output Source Array */
 document.querySelector("#array").innerHTML = numbers;
+
 /* Output Odds Only Array */
 let oddNumber = numbers.filter(number => number % 2 === 1);
 document.querySelector("#odds").innerHTML = oddNumber;
+
 /* Output Evens Only Array */
 let evenNumber = numbers.filter(number => number % 2 === 0);
 document.querySelector("#evens").innerHTML = evenNumber;
+
 /* Output Sum of Org. Array */
 let sum = numbers.reduce((sum, number) => sum + number);
 document.querySelector("#sumOfArray").innerHTML = sum;
+
 /* Output Multiplied by 2 Array */
 let sourceByTwo = numbers.map(number => number *2);
 document.querySelector("#multiplied").innerHTML = sourceByTwo;
+
 /* Output Sum of Multiplied by 2 Array */
 let sumMultiByTwo = sourceByTwo.reduce((sum, number) => sum + number);
 document.querySelector("#sumOfMultiplied").innerHTML = sumMultiByTwo;
