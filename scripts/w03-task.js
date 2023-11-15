@@ -14,14 +14,14 @@ function addNumbers(){
 }
 document.querySelector("#addNumbers").addEventListener("click", addNumbers);
 /* Function Expression - Subtract Numbers */
-function subtract(subtractNum1, subtractNum2){
-    return subtractNum1 - subtractNum2
+const subtract = function(number1, number2){
+    return number1 - number2
 };
-function subtractNumbers(){
-    let subtractNumber1 = Number(document.querySelector("#subtract1").value);
-    let subtractNumber2 = Number(document.querySelector("#subtract2").value);
+const subtractNumbers = function(){
+    let sub1 = Number(document.querySelector("#subtract1").value);
+    let sub2 = Number(document.querySelector("#subtract2").value);
     
-    document.querySelector("#difference").value = subtract(subtractNumber1, subtractNumber2);
+    document.querySelector("#difference").value = subtract(sub1, sub2);
 };
 document.querySelector("#subtractNumbers").addEventListener("click", subtractNumbers);
 /* Arrow Function - Multiply Numbers */
